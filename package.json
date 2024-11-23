@@ -1,0 +1,37 @@
+{
+  "name": "multi-factor-authentication",
+  "version": "1.0.0",
+  "description": "Building the 2 Factor Auth (MFA)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ravi-ka/Multi-Factor-Authentication.git"
+  },
+  "author": "Ravisankar Ka (ka.ravisankar@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ravi-ka/Multi-Factor-Authentication/issues"
+  },
+  "homepage": "https://github.com/Ravi-ka/Multi-Factor-Authentication#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.1",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "qrcode": "^1.5.4",
+    "speakeasy": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
