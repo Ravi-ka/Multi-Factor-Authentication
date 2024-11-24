@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import session from "express-session";
 import passport from "passport";
 import { databaseConnection } from "./src/config/dbConnection.js";
+import { userRoutes } from "./src/routes/userRoutes.js";
 
 dotenv.config();
 
@@ -32,6 +33,7 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 // Routes
+app.use("/api/auth", userRoutes);
 
 // Server Listening
 app.listen(port, (err) => {
